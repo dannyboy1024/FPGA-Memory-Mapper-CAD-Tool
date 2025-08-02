@@ -1,7 +1,6 @@
 
 # FPGA-logical-to-physical-memory-mapper
 ECE1756 course assignment. A logical-to-physical memory mapper implemented with a Next-Fit bin-packing algorithm for a Stratix-IV-like architecture in Python.  
-The mapping tool is written in a python script named mapper.py  
 It outputs basic.txt, which is the RAM mapping file.  
 The number of circuits is assumed to always be 69  
 
@@ -9,10 +8,10 @@ The number of circuits is assumed to always be 69
 For a Stratix-IV-like architecture, run **python mapper.py**  
 For other architectures (including Stratix-IV-like architecture), run  
 **python mapper.py  
-    <memType1>,<memType2>,<memTypeN>,  
-    <maxWidth1>,<maxWidth2>,<maxWidthN>,  
-    <LB/BRAM ratio1>,<LB/BRAM ratio2>,<LB/BRAM ratioN>,  
-    <% LB supporting LUTRAM>**  
+     memType1,memType2,memTypeN,  
+     maxWidth1,maxWidth2,maxWidthN,  
+     LBs/BRAM ratio1,LBs/BRAM ratio2,LBs/BRAM ratioN,  
+     Percentage LB supporting LUTRAM**   
 
 ## Example 1)
 Type1: 1k BRAM, maxWidth = 4bits, LBs/BRAM = 2  
