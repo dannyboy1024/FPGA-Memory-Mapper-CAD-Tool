@@ -4,7 +4,7 @@ ECE1756 course assignment. A logical-to-physical memory mapper implemented with 
 It outputs basic.txt, which is the RAM mapping file.  
 The number of circuits is assumed to always be 69  
 
-## There are two ways to run the script.
+## User instructions
 For a Stratix-IV-like architecture, run **python mapper.py**  
 For any architectures (including Stratix-IV-like architecture), please see the two examples below.  
 
