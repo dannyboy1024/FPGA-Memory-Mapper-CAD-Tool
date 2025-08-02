@@ -6,20 +6,15 @@ The number of circuits is assumed to always be 69
 
 ## There are two ways to run the script.
 For a Stratix-IV-like architecture, run **python mapper.py**  
-For other architectures (including Stratix-IV-like architecture), run  
-**python mapper.py  
-     memType1,memType2,memTypeN,  
-     maxWidth1,maxWidth2,maxWidthN,  
-     LBs/BRAM ratio1,LBs/BRAM ratio2,LBs/BRAM ratioN,  
-     Percentage LB supporting LUTRAM**   
+For any architectures (including Stratix-IV-like architecture), please see the two examples below.  
 
-## Example 1)
+### Example 1)
 Type1: 1k BRAM, maxWidth = 4bits, LBs/BRAM = 2  
 Type2: 2k BRAM, maxWidth = 8bits, LBs/BRAM = 4  
 Type3: 16k BRAM, maxWidth = 16bits, LBs/BRAM =50  
 **python mapper.py 10,11,14 4,8,16 2,4,50 1.0**  
 Run: ./checker -b 1024 4 2 1 -b 2048 8 4 1 -b 16384 16 50 1 -t logical_rams.txt logic_block_count.txt basic.txt to get detailed area usage.  
-## Example 2)
+### Example 2)
 Type1: 4k BRAM, maxWidth = 16bit, LBs/BRAM = 20  
 Type2: LUTRAM (30% LBs supporting LUTRAM)  
 Command: python mapper.py 12,18 16,-1 20,1 0.3  
