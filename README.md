@@ -1,5 +1,5 @@
 
-# FPGA-logical-to-physical-memory-mapper
+# FPGA-Memory-Mapper-CAD-Tool
 ECE1756 course assignment. A logical-to-physical memory mapper implemented with a Next-Fit bin-packing algorithm for a Stratix-IV-like architecture in Python.  
 It outputs basic.txt, which is the RAM mapping file.  
 The number of circuits is assumed to always be 69  
