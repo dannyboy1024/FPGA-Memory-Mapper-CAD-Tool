@@ -1,9 +1,9 @@
 
 # FPGA-logical-to-physical-memory-mapper
-ECE1756 course assignment. A logical-to-physical memory mapper using a Next-Fit bin-packing algorithm for a Stratix-IV-like architecture in Python.
-The mapping tool is written in a python script named mapper.py
-It outputs basic.txt, which is the RAM mapping file.
-The number of circuits is assumed to always be 69
+ECE1756 course assignment. A logical-to-physical memory mapper using a Next-Fit bin-packing algorithm for a Stratix-IV-like architecture in Python.  
+The mapping tool is written in a python script named mapper.py  
+It outputs basic.txt, which is the RAM mapping file.  
+The number of circuits is assumed to always be 69  
 
 ## There are two ways to run the script.
 For a Stratix-IV-like architecture, run python mapper.py
