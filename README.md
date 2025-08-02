@@ -6,7 +6,7 @@ It outputs basic.txt, which is the RAM mapping file.
 The number of circuits is assumed to always be 69  
 
 ## There are two ways to run the script.
-For a Stratix-IV-like architecture, run **python mapper.py**
+For a Stratix-IV-like architecture, run **python mapper.py**  
 For other architectures (including Stratix-IV-like architecture), run  
 **python mapper.py  
     <memType1>,<memType2>,…,<memTypeN>,  
