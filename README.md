@@ -6,13 +6,10 @@ It outputs basic.txt, which is the RAM mapping file.
 The number of circuits is assumed to always be 69  
 
 ## There are two ways to run the script.
-For a Stratix-IV-like architecture, run python mapper.py  
-For other architectures (including Stratix-IV-like architecture), run python mapper.py <memType1>,<memType2>,…,<memTypeN> <maxWidth1>,<maxWidth2>,…,<maxWidthN> <LB/BRAM ratio1>,<LB/BRAM ratio2>,…,<LB/BRAM ratioN>, <% LB supporting LUTRAM> for N types of memories. 
-memType := log(BRAM size). If it’s a LUTRAM, memType := 18  
-maxWidth can be any number that’s powers of 2. If it’s a LUTRAM, maxWidth is a placeholder.  
-LB/BRAM ratio can be any positive integer values. If it’s a LUTRAM, LB/BRAM ratio must be set to 1  
-% LB supporting LUTRAM can be any value from 0.0 to 1.0, inclusive. If LUTRAM is not used, set it to 1.0  
-Only memories of size from 1k to 128k are allowed to use.  
+For a Stratix-IV-like architecture, run 
+### python mapper.py  
+For other architectures (including Stratix-IV-like architecture), run 
+### python mapper.py <memType1>,<memType2>,…,<memTypeN> <maxWidth1>,<maxWidth2>,…,<maxWidthN> <LB/BRAM ratio1>,<LB/BRAM ratio2>,…,<LB/BRAM ratioN>, <% LB supporting LUTRAM> for N types of memories. 
 
 ## Example 1)
 Type1: 1k BRAM, maxWidth = 4bits, LBs/BRAM = 2  
